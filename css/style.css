@@ -1,0 +1,270 @@
+/* nav-bar styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    min-height: 50px;
+    overflow-y: scroll;
+}
+
+.navbar-brand span, .text-red
+{
+    color: rgb(255, 83, 74)
+}
+
+.navbar-brand span:last-child, .text-blue
+{
+    color: rgb(99,190,234)
+}
+
+/* information */
+
+.information
+{   
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.information h1
+{
+    margin-top: 20px;
+}
+
+.information p 
+{
+    font-size: 16px;
+    margin: 5vh;
+}
+
+.text 
+{
+ margin: 20px;
+}
+
+/*  offer container  */
+.card 
+{
+margin: 10px;
+}
+
+/*  price-list container  */
+.price-list 
+{
+ padding: 20px;
+}
+
+.table
+{
+    font-size: 12px;
+}
+
+.table td:hover
+{
+ transition: 0.5s;
+ background-color: rgb(141, 214, 250);
+
+}
+
+/* contact - footer */
+
+.btn-facebook 
+{
+    background-color: #3B5998;
+}
+
+.btn-phone
+{
+    background-color: #4be26e;
+}
+
+.btn-mail
+{
+    background-color: #e45050;
+}
+
+.footer
+{
+    margin-top: 50px;
+    height: 50px;
+}
+
+.footer p
+{
+    box-sizing: border-box;
+    padding-top: 15px; 
+    font-size: 12px;
+}
+
+.snowflake-one
+{
+    color: rgba(150,150,150,0.2);
+    position: absolute;
+    font-size: 5rem;
+    top: 500px;
+    left: 15%;
+}
+
+.snowflake-two
+{
+    color: rgba(150,150,150,0.2);
+    position: absolute;
+    font-size: 5rem;
+    top: 1000px;
+    right: 15%;
+}
+
+.snowflake-three
+{
+    color: rgba(150,150,150,0.2);
+    position: absolute;
+    font-size: 5rem;
+    top: 1500px;
+    left: 15%;
+}
+
+.snowflake-four
+{
+    color: rgba(150,150,150,0.2);
+    position: absolute;
+    font-size: 5rem;
+    top: 2000px;
+    right: 15%;
+}
+
+.snowflake-five
+{
+    color: rgba(150,150,150,0.2);
+    position: absolute;
+    font-size: 5rem;
+    top: 2500px;
+    left: 15%;
+}
+
+.snowflake-six
+{
+    color: rgba(150,150,150,0.2);
+    position: absolute;
+    font-size: 5rem;
+    top: 3000px;
+    right: 15%;
+}
+
+.snowflake-seven
+{
+    color: rgba(150,150,150,0.2);
+    position: absolute;
+    font-size: 5rem;
+    top: 3500px;
+    left: 15%;
+}
+
+/* keyframes */
+
+.snowflake-one, .snowflake-two, .snowflake-three,
+.snowflake-four, .snowflake-five, .snowflake-six,
+.snowflake-seven
+{
+    animation: anim 10s infinite;
+}
+
+@keyframes anim 
+{
+ 0% 
+ {
+     opacity: 0;
+ }
+ 50%
+ {
+    opacity: 1;
+ } 
+ 100%
+ {
+     opacity: 0;
+     margin-top: 500px;
+     transform: rotate(180deg);
+ }
+}
+
+/*  Media queries  */
+
+@media (min-width: 660px) and (orientation:landscape) 
+{
+    .information p 
+    {
+        font-size: 20px;
+        margin: 30px;
+    } 
+    .card
+    {
+        width: 19rem;
+    }
+}
+
+@media (min-width: 767px) 
+{
+    .information p 
+    {
+        font-size: 30px;
+        margin: 40px;
+    } 
+    .card
+    {
+        width: 16rem;
+    }
+}
+
+@media (min-width: 1024px)
+{
+        .information p 
+        {
+            font-size: 30px;
+            margin: 60px;
+        } 
+        .card
+        {
+            width: 25rem;
+            margin-bottom: 50px;
+        }
+        .price-list
+        {
+            width: 80%;
+        }
+}
+
+@media (min-width: 1440px)
+{
+        .information p 
+         {
+            font-size: 30px;
+            margin: 10%;
+        } 
+        .card
+        {
+            width: 29rem;
+            margin-bottom: 50px;
+        }
+        .price-list
+        {
+            width: 70%;
+        }
+}
+
+@media (min-width: 2200px)
+{
+        .information p 
+         {
+            font-size: 40px;
+            margin: 13%;
+        }
+        .card
+        {
+            width: 32rem;
+            margin-bottom: 50px;
+        }
+} 
+
